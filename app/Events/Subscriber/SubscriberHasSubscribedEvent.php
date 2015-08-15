@@ -9,21 +9,21 @@
  * file that was distributed with this source code.
  */
 
-namespace CachetHQ\Cachet\Events;
+namespace CachetHQ\Cachet\Events\Subscriber;
 
 use CachetHQ\Cachet\Models\Subscriber;
 
-class SubscriberHasVerifiedEvent
+class SubscriberHasSubscribedEvent
 {
     /**
-     * The subscriber who has verified.
+     * The subscriber who has subscribed.
      *
      * @var \CachetHQ\Cachet\Models\Subscriber
      */
     public $subscriber;
 
     /**
-     * Create a new subscriber has verified event instance.
+     * Create a new subscriber has subscribed event instance.
      */
     public function __construct(Subscriber $subscriber)
     {
