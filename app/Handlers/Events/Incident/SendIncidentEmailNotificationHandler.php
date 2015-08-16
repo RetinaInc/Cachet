@@ -57,9 +57,9 @@ class SendIncidentEmailNotificationHandler
     /**
      * Handle the event.
      *
-     * @param \CachetHQ\Cachet\Events\Incident\IncidentHasReportedEvent $event
+     * @param \CachetHQ\Cachet\Events\Incident\IncidentWasReportedEvent $event
      */
-    public function handle(IncidentHasReportedEvent $event)
+    public function handle(IncidentWasReportedEvent $event)
     {
         $incident = $this->presenter->decorate($event->incident);
         $component = $this->presenter->decorate($event->incident->component);
